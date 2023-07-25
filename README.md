@@ -5,4 +5,4 @@ collaborators:
 1. Simran Summan
 2. Sneha Saha
 3. Atul Singh
-4. Dev Kumar Poddar
+4. Deb Kumar Poddar
