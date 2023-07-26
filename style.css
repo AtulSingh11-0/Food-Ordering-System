@@ -415,6 +415,7 @@ section .img_box .slide_buttons i {
     justify-content: space-between;
 }
 
+/* styling every food_box in the 1st row */
 .food_menu .food_box{
     overflow: hidden;
     color: var(--white);
@@ -426,21 +427,25 @@ section .img_box .slide_buttons i {
     z-index: 2;
 }
 
+/* targeting the 2nd food_box in the 1st row*/
 .food_menu .food_box:nth-child(2){
     width: 37%;
     background: #FF671F;
 }
 
+/* targeting the 3rd food_box in the 1st row*/
 .food_menu .food_box:nth-child(3){
     width: 33%;
     background: #CD212A;
 }
 
+/* styling the food_box container */
 .food_menu .food_box .container {
     position: relative;
     z-index: 2;
 }
 
+/* styling the heading within the food_box container */
 .food_menu .food_box .container h1{
     filter: drop-shadow(2px 2px 2px var(--paragraph-color));
     font-family: 'Lumanosimo', cursive;
@@ -449,12 +454,14 @@ section .img_box .slide_buttons i {
     margin-bottom: 10px;
 }
 
+/* styling the paragraph within the food_box container */
 .food_menu .food_box .container p{
     filter: drop-shadow(2px 2px 2px var(--paragraph-color));
     line-height: 1.5em;
     margin-top: 10px;
 }
 
+/* styling the button within the food_box container */
 .food_menu .food_box .container button{
     font-weight: var(--list-font-weight);
     background: black;
@@ -469,6 +476,7 @@ section .img_box .slide_buttons i {
     transition: .3s linear;
 }
 
+/* targeting images of the food_box*/
 .food_menu .food_box img {
     filter: drop-shadow(-15px 0px 4px var(--paragraph-color));
     position: absolute;
@@ -478,6 +486,7 @@ section .img_box .slide_buttons i {
     z-index: -1;
 }
 
+/* targeting the image in the 2nd food_box in the 1st row*/
 .food_menu .food_box:nth-child(2) img {
     position: absolute;
     left: 55%;
@@ -486,6 +495,7 @@ section .img_box .slide_buttons i {
     z-index: -1;
 }
 
+/* targeting the image in the 3rd food_box in the 1st row*/
 .food_menu .food_box:nth-child(3) img {
     position: absolute;
     left: 59%;
@@ -494,6 +504,7 @@ section .img_box .slide_buttons i {
     z-index: -1;
 }
 
+/* styling every food_box in the 2nd row */
 .food_menu2 .food_box {
     overflow: hidden;
     position: relative;
@@ -505,16 +516,19 @@ section .img_box .slide_buttons i {
     z-index: 2;
 }
 
+/* targeting the 2nd food_box in the 2nd row*/
 .food_menu2 .food_box:nth-child(2) {
     width: 37%;
     background: #be0029;
 }
 
+/* targeting the 3rd food_box in the 2nd row*/
 .food_menu2 .food_box:nth-child(3) {
     width: 28%;
     background: #2D2A4A;
 }
 
+/* targeting the image in the 2nd food_box in the 2nd row*/
 .food_menu2 .food_box:nth-child(3) img{
     position: absolute;
     left: 50%;
