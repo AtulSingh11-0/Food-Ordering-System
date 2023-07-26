@@ -8,21 +8,22 @@
 }
 
 html {
-    /* font-family: 'Baloo 2', cursive; */
     font-family: 'Ubuntu', sans-serif;
 }
 
 header {
     position: relative;
     width: 100%;
-    height: 400px;
+    height: auto;
+    /* height: 600px; */
+    padding-bottom: 40px;
 }
 
 /* yellow card in the top right part of the screen */
 header::before {
     content: '';
     position: absolute;
-    width: 40%;
+    width: 38%;
     height: 100%;
     right: 3%;
     background: linear-gradient(0deg, #ffb12a, #fec140);
@@ -136,21 +137,23 @@ header nav .contact_select li:nth-child(2) i {
 section{
     display: flex;
     width: 80%;
-    border: 1px solid black;
     margin: auto;
     margin-top: 20px;
 }
 
+/* styling for the chilli icons and ingredients images */
 section .content, .img_box{
     position: relative;
     width: 40%;
     padding: 10px;
 }
 
+/* styling for only the ingredients images */
 section .img_box{
     width: 60%;
 }
 
+/* styling for the cuisines box */
 section .content h5 {
     display: unset;
     color: white;
@@ -160,16 +163,19 @@ section .content h5 {
     font-size: 1rem;
 }
 
+/* styling for the mexican cuisine title-box */
 section .content h1 {
     margin-block: 1em .25em; 
     font-family: 'Lumanosimo', cursive;
     letter-spacing: 3px;
 }
 
+/* styling for the chilli icons only*/
 section .content .spicy_icon {
     margin-bottom: 1em;
 }
 
+/* styling for the cuisines description */
 section .content p {
     text-align: justify;
     width: 350px;
@@ -178,23 +184,27 @@ section .content p {
     color: gray;
 }
 
+/* styling for the ingredients heading */
 section .content h6 {
     margin-top: 20px;
     color: gray;
     font-size: 1rem;
 }
 
+/* accessing the ingredients images box */
 section .content .img_box {
     display: flex; 
     align-items: center; 
 }
 
+/* accessing the images in images box */
 section .content .img_box img {
     width: 30px;
     margin-right: 10px;
     filter: drop-shadow(2px 2px 2px gray);
 }
 
+/* styling the +3 heading */
 section .content .img_box h6 {
     background: #00a950;
     color: white;
@@ -204,11 +214,14 @@ section .content .img_box h6 {
     top: -10px;
 }
 
+/* accessing the order rate boxx */
 section .content .order_rate {
     display: flex;
     align-items: center;
+    margin-top: 10px;
 }
 
+/* styling the anchor tage in order rate boxx */
 section .content .order_rate a {
     background: #000;
     color: white;
@@ -219,12 +232,105 @@ section .content .order_rate a {
     transition: .3s linear;
 }
 
+/* adding a hover class over the anchor tag */
 section .content .order_rate a:hover {
     background: #00a950;
 } 
 
+/* styling the price heading beside order rate boxx */
 section .content .order_rate h2 {
     margin-left: 30px;
     color: #00a950;
+}
+
+/* setting scroll properties of the food slider */
+section .content .food_slider {
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    scrollbar-width:none; /* hiding the scroll-bar for firefox */
+}
+
+/* hiding the scroll-bar for chrome */
+section .content .food_slider::-webkit-scrollbar {
+    display: none;
+}
+
+/* styling each image within the food slider */
+section .content .food_slider img {
+    width: 60px;
+    height: 60px;
+    margin-right: 10px;
+    cursor: pointer;
+    opacity: .3;
+    transition: .3s linear;
+    object-fit: contain;
+}
+
+/* giving the 1st image in the slider a opacity-1 using pseudo-class */
+section .content .food_slider img:nth-child(1) {
+    opacity: 1;
+    transform: scale(1.1);
+}
+
+/* adding hover effect over each image in the slider and also scaling them */
+section .content .food_slider img:hover {
+    opacity: 1;
+    transform: scale(1.1);
+}
+
+/* setting scroll properties of the img_box */
+section .img_box .images {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    scroll-behavior: smooth;
+    overflow-x: auto;
+    margin-top: 50px;    
+    scrollbar-width:none; /* hiding the scroll-bar for firefox */
+}
+
+/* hiding the scroll-bar for chrome */
+section .img_box .images::-webkit-scrollbar {
+    display: none;
+}
+
+/* styling each image withing the box */
+section .img_box .images img {
+    width: 13.5em;
+    margin-right: 10px;
+    filter: blur(1.5px);
+    transition: .3s linear;
+}
+
+/* accessing the 1st element from the image box and styling iy */
+section .img_box .images img:nth-child(1) {
+    width: 35em;
+    filter: blur(0px);
+}
+
+/* styling the slider buttons */
+section .img_box .slide_buttons {
+    position: absolute;
+    bottom: 10px;
+    left: 21.5%;
+    width: 14em;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* styling the icons within the buttons */
+section .img_box .slide_buttons i {
+    font-size: 2em;
+    background: #ff6b01;
+    color: white;
+    border-radius: 50%;
+    padding: 10px 12px;
+    cursor: pointer;
+    transition: .3s linear;
 }
 /* section styling ends here */
