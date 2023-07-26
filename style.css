@@ -680,7 +680,7 @@ footer .container .button {
 /* styling the buttons in .button */
 footer .container .button button {
     margin-right: 20px;
-    padding: 9px 15px;
+    padding: 10px 15px;
     font-size: 1rem;
     border-radius: 10px;
     color: var(--white);
