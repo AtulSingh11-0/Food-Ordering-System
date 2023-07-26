@@ -272,6 +272,7 @@ section .content .food_slider::-webkit-scrollbar {
 
 /* styling each image within the food slider */
 section .content .food_slider img {
+    filter: drop-shadow(2px 2px 2px var(--paragraph-color));
     width: 60px;
     height: 60px;
     margin-right: 10px;
@@ -313,14 +314,14 @@ section .img_box .images::-webkit-scrollbar {
 section .img_box .images img {
     width: 13.5em;
     margin-right: 10px;
-    filter: blur(1.5px);
+    filter: blur(1.5px) drop-shadow(4px 2.5px 6px var(--paragraph-color));
     transition: .3s linear;
 }
 
 /* accessing the 1st element from the image box and styling iy */
 section .img_box .images img:nth-child(1) {
     width: 35em;
-    filter: blur(0px);
+    filter: blur(0px) drop-shadow(4px 2.5px 6px var(--paragraph-color));
 }
 
 /* styling the slider buttons */
@@ -439,6 +440,7 @@ section .img_box .slide_buttons i {
 }
 
 .food_menu .food_box .container h1{
+    filter: drop-shadow(2px 2px 2px var(--paragraph-color));
     font-family: 'Lumanosimo', cursive;
     letter-spacing: 3px;
     font-weight: var(--list-font-weight);
@@ -446,6 +448,7 @@ section .img_box .slide_buttons i {
 }
 
 .food_menu .food_box .container p{
+    filter: drop-shadow(2px 2px 2px var(--paragraph-color));
     line-height: 1.5em;
     margin-top: 10px;
 }
@@ -465,6 +468,7 @@ section .img_box .slide_buttons i {
 }
 
 .food_menu .food_box img {
+    filter: drop-shadow(-15px 0px 4px var(--paragraph-color));
     position: absolute;
     left: 53%;
     top: -4%;
