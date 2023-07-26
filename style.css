@@ -16,6 +16,7 @@
     --list-font-weight: 600;
     --content-font-size: 1rem;
     --content-font-color: gray;
+    --off-white-bg: #fbf8f2;
 }
 
 html {
@@ -168,9 +169,10 @@ section .img_box{
 section .content h5 {
     display: unset;
     color: var(--white);
-    background: #660099;
+    background: #a98eb6;
     padding: 5px 10px;
-    border-radius: 5px;
+    border-radius: 0 5px 5px 0;
+    border-left: 10px solid #660099;
     font-size: var(--content-font-size);
 }
 
@@ -320,7 +322,7 @@ section .img_box .images img {
     transition: .3s linear;
 }
 
-/* accessing the 1st element from the image box and styling iy */
+/* accessing the 1st element from the image box and styling it */
 section .img_box .images img:nth-child(1) {
     width: 35em;
     filter: blur(0px) drop-shadow(4px 2.5px 6px var(--paragraph-color));
@@ -353,7 +355,7 @@ section .img_box .slide_buttons i {
 .delivery {
     width: 100%;
     margin: auto;
-    background: #fbf8f2;
+    background: var(--off-white-bg);
     height: auto;
     padding: 40px 7%;
     display: flex;
@@ -464,6 +466,7 @@ section .img_box .slide_buttons i {
 /* styling the button within the food_box container */
 .food_menu .food_box .container button{
     font-weight: var(--list-font-weight);
+    letter-spacing: 3px;
     background: black;
     border-radius: 10px;
     padding: 9px 15px;
@@ -537,3 +540,185 @@ section .img_box .slide_buttons i {
     z-index: -1;
 }
 /* food_menu styling ends here */
+
+/* footer styling starts here */
+footer {
+    overflow: hidden;
+    width: 100%;
+    height: auto;
+    background: var(--off-white-bg);
+    position: relative;
+}
+
+/* styling the nav bar in footer */
+footer nav {
+    width: 85%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 10px;
+}
+
+/* stylig the unordered list within nav */
+footer nav ul {
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+}
+
+/* styling the list elements */
+footer nav ul li {
+    margin: 5px 10px;
+}
+
+/* styling the anchor tag in the list */
+footer nav ul li a {
+    text-decoration: none;
+    color: black;
+    font-weight: var(--list-font-weight);
+    font-size: var(--list-font-size);
+    transition: .3s linear;
+}
+
+/* adding a hover effect over the anchor tag */
+footer nav ul li a:hover{
+    color: rgba(0, 0, 0, 0.6);
+}
+
+/* accessing the anchor tag of the 1st list item */
+footer nav ul li:nth-child(1) a{
+    background: #FF671F;
+    color: var(--white);
+    padding: 9px 15px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 1.2rem;
+    transition: .3s linear;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+/* accessing the icon of the 1st list item */
+footer nav ul li:nth-child(1) a i{
+    margin-left: 10px;
+}
+
+/* accessing the anchor tag of the 2nd unordered list within the nav */
+footer nav ul:nth-child(2) li a {
+    all: unset;
+    color: var(--h6-order-rate-color);
+    font-weight: bold;
+    font-size: 1.3rem;
+}
+
+/* accessing the anchor tag of the 2nd list item in the 2nd unordered list  */
+footer nav ul:nth-child(2) li:nth-child(2) a {
+    background: var(--white);
+    color: black;
+    padding: 9px 15px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 1.2rem;
+    transition: .3s linear;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+/* accessing the 2nd list item in the 2nd unordered list  */
+footer nav ul:nth-child(2) li:nth-child(2) {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 130px;
+    margin-top: 0;
+    margin-right: 10px;
+    padding: 9px 15px;
+    border-radius: 10px;
+    font-size: 1.3rem;
+    background: var(--white);
+    color: black;
+    box-shadow: 0 0 20px rgba(0, 0, 0, .1);
+    cursor: pointer;
+    transition: .3s linear;
+}
+
+/* styling the hr tag in the footer */
+footer hr {
+    width: 85%;
+    margin: auto;
+    margin-top: 20px;
+}
+
+/* styling the .container div */
+footer .container{
+    width: 85%;
+    margin: auto;
+    margin-top: 40px;
+}
+
+/* styling the title in .container */
+footer .container h1{
+    filter: drop-shadow(2px 2px 1px var(--paragraph-color));
+    margin-top: 5px;
+    font-size: 3rem;
+    font-weight: bold;
+    line-height: 1em;
+    color: #8CCA72;
+}
+
+/* styling the 2nd title in .container */
+footer .container h1:nth-child(2) {
+    color: var(--h6-order-rate-color);
+}
+
+/* styling the .button div */
+footer .container .button {
+    margin-top: 20px;
+}
+
+/* styling the buttons in .button */
+footer .container .button button {
+    margin-right: 20px;
+    padding: 9px 15px;
+    font-size: 1rem;
+    border-radius: 10px;
+    color: var(--white);
+    background: black;
+    font-weight: var(--list-font-weight);
+    border: none;
+    outline: none;
+    cursor: pointer;
+    transition: .3s linear;
+}
+
+/* adding a hover effect over the buttons */
+footer .container .button button:hover {
+    background: #8CCA72;
+}
+
+/* giving a seperate hover effect to the 2nd button */
+footer .container .button button:nth-child(2):hover {
+    background: var(--h6-order-rate-color);
+}
+
+/* adjusting the footer image */
+footer img {
+    filter: drop-shadow(8px 8px 10px var(--list-hover-text-color));
+    position: absolute;
+    right: 10%;
+    bottom: 5%;
+    width: 15em;
+    height: auto;
+}
+
+/* styling the copyright para */
+footer .copyright {
+    color: var(--paragraph-color);
+    width: 85%;
+    margin: auto;
+    margin-top: 20px;
+    font-size: 1.2rem;
+    padding-bottom: 2rem;
+}
+/* footer styling ends here */
