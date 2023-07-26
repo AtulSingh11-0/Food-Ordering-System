@@ -57,6 +57,7 @@ header nav .logo_ul{
 
 /* gave dimensions to the chef img logo */
 header nav .logo_ul img {
+    filter: drop-shadow(4px 4px 4px var(--paragraph-color));
     width: 60px;
 }
 
@@ -175,6 +176,7 @@ section .content h5 {
 
 /* styling for the mexican cuisine title-box */
 section .content h1 {
+    filter: drop-shadow(1px 1px 2px var(--paragraph-color));
     margin-block: 1em .25em; 
     font-family: 'Lumanosimo', cursive;
     letter-spacing: 3px;
@@ -314,7 +316,7 @@ section .img_box .images::-webkit-scrollbar {
 section .img_box .images img {
     width: 13.5em;
     margin-right: 10px;
-    filter: blur(1.5px) drop-shadow(4px 2.5px 6px var(--paragraph-color));
+    filter: blur(1.5px);
     transition: .3s linear;
 }
 
