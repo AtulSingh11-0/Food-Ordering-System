@@ -193,6 +193,7 @@ section .content .spicy_icon {
 section .content p {
     text-align: justify;
     width: 350px;
+    height: 200px;
     line-height: 1.5em;
     font-size: 1.1rem;
     color: var(--content-font-color);
@@ -316,16 +317,20 @@ section .img_box .images::-webkit-scrollbar {
 
 /* styling each image withing the box */
 section .img_box .images img {
-    width: 13.5em;
-    margin-right: 10px;
+    width: 20em;
+    padding: 0 50px;
     filter: blur(1.5px);
     transition: .3s linear;
 }
 
 /* accessing the 1st element from the image box and styling it */
 section .img_box .images img:nth-child(1) {
-    width: 35em;
-    filter: blur(0px) drop-shadow(4px 2.5px 6px var(--paragraph-color));
+    width: 560px;
+    filter: blur(0px) drop-shadow(4px 4px 6px var(--paragraph-color));
+}
+
+section .img_box .images img:last-child {
+    margin-right: 400px;
 }
 
 /* styling the slider buttons */
