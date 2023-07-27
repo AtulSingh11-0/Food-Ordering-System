@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
 
     <style>
-        .menu_container{
+        #menu_container{
         padding-block: 50px 100px;
         position: relative;
         color: #47780e;
@@ -42,15 +42,21 @@
                     <li><a href="#">Delivery</a></li>
                     <li><a href="#">Shops</a></li>
                     <li><a href="#">Dining Out</a></li>
-                    <li><a href="#">MENU <i class="bi bi-book-fill"></i></a></li>
+                    <li><a href="#menu_container">MENU <i class="bi bi-book-fill"></i></a></li>
                 </ul>
             </div>
 
             <div class="contact_select">
                 <li><a href="tel:9876543210">+91 9876543210</a></li>
                 <li>
-                    <h6>Select</h6>
-                    <i class="bi bi-chevron-down"></i>
+                    <select class="classic">
+                        <option>Select</option>
+                        <option>KOLKATA</option>
+                        <option>BOBMBAY</option>
+                        <option>BENGALURU</option>
+                        <option>NEW DELHI</option>
+                        <option>CHENNAI</option>
+                    </select>
                 </li>
             </div>
 
@@ -99,7 +105,7 @@
         <!-- Section ends -->
     </header>
 
-    <div class="menu_container" style="font-family: ubuntu;">
+    <div id="menu_container" style="font-family: ubuntu;">
         <div class="menu_items">
           <div class="dishes">
             <h1>Menu</h1>
@@ -109,37 +115,38 @@
         <div class="menu_items">
           <div class="dishes">
             <h4 class="menu_title">Appetizer</h4>
-            <p >Oysters and Pearls</p>
-            <p >Sabayon of pearl tapioca with island greek oysters</p>
-            <p >White Sturgeon Caviar</p>
+            <p >Jalapeno Popper Dip</p>
+            <p >Nachos Supreme</p>
+            <p >Salsa Verde</p>
           </div>
         </div>
         <div class="menu_items">
           <div class="dishes">
             <h4 class="menu_title">First Course</h4>
-            <p >Chantenay Carrot Tofu</p>
-            <p >Hawaiian Heart of Peach Pea and Lime</p>
+            <p >Grilled Onion & Skirt Steak Tacos</p>
+            <p >Carnitas Huevos Rancheros</p>
           </div>
         </div>
         <div class="menu_items">
           <div class="dishes">
             <h4 class="menu_title">Main Course</h4>
-            <p >Slow Cook Fillet Of Pacific Yellowtail</p>
-            <p >Compress Cucumbers, Avocado Mousse, And Garden Celery</p>
+            <p >Oaxacan Red Chile Enchiladas</p>
+            <p >Mexican Noodle Casserole</p>
           </div>
         </div>
         <div class="menu_items">
           <div class="dishes">
             <h4 class="menu_title">Dessert</h4>
-            <p >Chocolate Soufflet</p>
-            <p >Strawberry and Vanilla Sorbet</p>
+            <p >Sweet Rice</p>
+            <p >Baked Churro Bites</p>
           </div>
         </div>
         <div class="menu_items">
           <div class="dishes">
-            <h4 class="menu_title">Wine</h4>
-            <p >White: Reisling Chardonnay</p>
-            <p >Red: Mary Rivers, Pinot Noir, Sonoma Coast</p>
+            <h4 class="menu_title">Cocktails</h4>
+            <p >Margarita</p>
+            <p >Michelada</p>
+            <p >Paloma</p>
           </div>
         </div>
       </div>
@@ -157,8 +164,14 @@
             <ul>
                 <li><a href="tel:9876543210">+91 9876543210</a></li>
                 <li>
-                    <h6>KOLKATA</h6>
-                    <i class="bi bi-chevron-down"></i>
+                    <select class="classic">
+                        <option>Select</option>
+                        <option>KOLKATA</option>
+                        <option>BOBMBAY</option>
+                        <option>BENGALURU</option>
+                        <option>NEW DELHI</option>
+                        <option>CHENNAI</option>
+                    </select>
                 </li>
             </ul>
         </nav>

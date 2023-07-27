@@ -130,20 +130,19 @@ header nav .contact_select li a {
 }
 
 /* targeting the 2nd element of the list */
-header nav .contact_select li:nth-child(2) {
+header nav .contact_select li:nth-child(2) select {
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: bold;
+    font-size: 1.1rem;
     display: flex;
     justify-content: space-between;
     font-size: var(--list-font-size);
     background: var(--white);
     border-radius: 1em;
+    border: none;
     padding: 5px 15px;
-    width: 100px;
+    width: auto;
     margin-left: 20px;
-}
-
-/* giving margin-left to the icon in the 2nd element */
-header nav .contact_select li:nth-child(2) i {
-    margin-left: 5px;
 }
 
 /* section styling starts here */
@@ -633,20 +632,19 @@ footer nav ul:nth-child(2) li:nth-child(2) a {
     margin-right: 10px;
 }
 
-/* accessing the 2nd list item in the 2nd unordered list  */
-footer nav ul:nth-child(2) li:nth-child(2) {
+footer nav ul:nth-child(2) li:nth-child(2) select {
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: bold;
     display: flex;
-    align-items: center;
     justify-content: space-between;
-    width: 130px;
-    margin-top: 0;
-    margin-right: 10px;
-    padding: 9px 15px;
-    border-radius: 10px;
-    font-size: 1.3rem;
+    font-size: 1.1rem;
     background: var(--white);
-    color: black;
-    box-shadow: 0 0 20px rgba(0, 0, 0, .1);
+    border-radius: 10px;
+    border: none;
+    box-shadow: 0 0 20px rgba(0, 0, 0, .3);
+    padding: 9px 15px;
+    width: auto;
+    margin-left: 20px;
     cursor: pointer;
     transition: .3s linear;
 }
