@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Koh+Santepheap&display=swap');
+
 .menu_items {
     display: flex;
     flex-direction: row;
@@ -8,6 +10,7 @@
 .menu_items h1{
     padding: 10px;
     text-transform: uppercase;
+    font-family: 'Koh Santepheap', cursive;
 }
 
 .menu_items hr {
@@ -28,4 +31,7 @@
 
 .menu_items p{
     padding: 10px;
+}
+.menu_title{
+    font-family: 'Koh Santepheap', cursive;
 }
