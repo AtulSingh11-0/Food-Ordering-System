@@ -254,7 +254,7 @@ section .content .order_rate a:hover {
 } 
 
 /* styling the price heading beside order rate boxx */
-section .content .order_rate h2 {
+section .content .order_rate .price {
     margin-left: 30px;
     color: var(--h6-order-rate-color);
 }
