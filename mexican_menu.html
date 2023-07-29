@@ -1,198 +1,223 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Food Nation</title>
 
     <!-- stylesheet link -->
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="menuStyling.css">
-    
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="menuStyling.css" />
+
     <!-- bootstrap icons link -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
-
-    <style>
-        #menu_container{
-        padding-block: 50px 100px;
-        position: relative;
-        color: #47780e;
-        background: 
-            linear-gradient(
-                90deg,
-                forestgreen,
-                transparent 40%
-            ), 
-            linear-gradient(
-                270deg,
-                red,
-                transparent 40%
-            );
-}
-    </style>
-</head>
-<body>
-    
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+    />
+  </head>
+  <body>
     <header>
-        <nav>
+      <nav>
+        <div class="logo_ul">
+          <a href="/"><img src="home_page_logo.png" alt="Our logo" /></a>
+          <ul>
+            <li><a href="#">Delivery</a></li>
+            <li><a href="#">Shops</a></li>
+            <li><a href="#">Dining Out</a></li>
+            <li>
+              <a href="#menu_container">MENU <i class="bi bi-book-fill"></i></a>
+            </li>
+          </ul>
+        </div>
 
-            <div class="logo_ul">
-                <a href="/"><img src="home_page_logo.png" alt="Our logo"></a>
-                <ul>
-                    <li><a href="#">Delivery</a></li>
-                    <li><a href="#">Shops</a></li>
-                    <li><a href="#">Dining Out</a></li>
-                    <li><a href="#menu_container">MENU <i class="bi bi-book-fill"></i></a></li>
-                </ul>
-            </div>
+        <div class="contact_select">
+          <li><a href="tel:9876543210">+91 9876543210</a></li>
+          <li>
+            <select class="classic">
+              <option>Select</option>
+              <option>KOLKATA</option>
+              <option>BOMBAY</option>
+              <option>BENGALURU</option>
+              <option>NEW DELHI</option>
+              <option>CHENNAI</option>
+            </select>
+          </li>
+        </div>
+      </nav>
 
-            <div class="contact_select">
-                <li><a href="tel:9876543210">+91 9876543210</a></li>
-                <li>
-                    <select class="classic">
-                        <option>Select</option>
-                        <option>KOLKATA</option>
-                        <option>BOMBAY</option>
-                        <option>BENGALURU</option>
-                        <option>NEW DELHI</option>
-                        <option>CHENNAI</option>
-                    </select>
-                </li>
-            </div>
+      <!-- Section starts -->
+      <section>
+        <div class="content">
+          <h5>CUISINES</h5>
+          <h1 class="title">MEXICAN CUISINE</h1>
+          <div class="spicy_icon">
+            <img src="img/icon_1.png" alt="chilli" />
+            <img src="img/icon_1.png" alt="chilli" />
+            <img src="img/icon_1.png" alt="chilli" />
+            <img src="img/icon_2.png" alt="chilli" />
+            <img src="img/icon_2.png" alt="chilli" />
+          </div>
+          <p class="description">
+            A fun, delicious, and spicy cuisine: Mexican! As one of the world's
+            most popular types of cuisine, Mexican food is full of flavour and
+            colour. The cuisine blends ancient Aztec ingredients with Spanish
+            flavours to create unique dishes sure to tantalise your taste buds.
+          </p>
 
-        </nav>
-
-        <!-- Section starts -->
-        <section>
-
-            <div class="content">
-                <h5>CUISINES</h5>
-                <h1 class="title">MEXICAN CUISINE</h1>
-                <div class="spicy_icon">
-                    <img src="img/icon_1.png" alt="chilli">
-                    <img src="img/icon_1.png" alt="chilli">
-                    <img src="img/icon_1.png" alt="chilli">
-                    <img src="img/icon_2.png" alt="chilli">
-                    <img src="img/icon_2.png" alt="chilli">
-                </div>
-                <p class="description">A fun, delicious, and spicy cuisine: Mexican! As one of the world's most popular types of cuisine, Mexican food is full of flavour and colour. The cuisine blends ancient Aztec ingredients with Spanish flavours to create unique dishes sure to tantalise your taste buds.</p>
-                
-                <h6>INGREDIENTS</h6>
-                <div class="img_box">
-                    <img src="img/tomato_logo.png" alt="tomato_logo">
-                    <img src="img/avocado_logo.png" alt="avocado_logo">
-                    <img src="img/lime_logo.png" alt="lime_logo">
-                    <img src="img/cheese_logo.png" alt="cheese_logo">
-                    <h6>+3</h6>
-                </div>
-                <div class="order_rate">
-                    <a href="">ORDER NOW</a>
-                    <h2 class="price">&#x20B9;499 - &#x20B9;1599</h2>
-                </div>
-            </div>
-            <div class="img_box">
-                <div class="images">
-                    <img 
-                        class="main_images" 
-                        src="img/mexican_cuisine.png" 
-                        alt="Mexican Cuisine"
-                        style="width: 60em;"
-                    >
-                </div>
-            </div>
-
-        </section>
-        <!-- Section ends -->
+          <h6>INGREDIENTS</h6>
+          <div class="img_box">
+            <img src="img/tomato_logo.png" alt="tomato_logo" />
+            <img src="img/avocado_logo.png" alt="avocado_logo" />
+            <img src="img/lime_logo.png" alt="lime_logo" />
+            <img src="img/cheese_logo.png" alt="cheese_logo" />
+            <h6>+3</h6>
+          </div>
+          <div class="order_rate">
+            <a href="">ORDER NOW</a>
+            <h2 class="price">&#x20B9;499 - &#x20B9;1599</h2>
+          </div>
+        </div>
+        <div class="img_box">
+          <div class="images">
+            <img
+              class="main_images"
+              src="img/mexican_cuisine.png"
+              alt="Mexican Cuisine"
+            />
+          </div>
+        </div>
+      </section>
+      <!-- Section ends -->
     </header>
 
-    <div id="menu_container" style="font-family: ubuntu;">
-        <div class="menu_items">
-          <div class="dishes">
-            <h1>Menu</h1>
-            <hr style="color: #47780e;">
-          </div>
+    <div id="menu_container" style="font-family: ubuntu">
+      <h1 style="text-align: center; padding: 20px;">MENU</h1>
+      <div class="menu_items">
+        <div class="card">
+          <img src="img/nachos_supreme.png" alt="Nachos Supreme">
+          <h4>Nachos Supreme</h4>
+            <div class="info">
+              <h4>&#x20B9; 799</h4>
+              <h4>4.5<i class="bi bi-star-fill"></i></h4>
+            </div>
+            <button>ADD TO CART</button>
         </div>
-        <div class="menu_items">
-          <div class="dishes">
-            <h4 class="menu_title">Appetizer</h4>
-            <p >Jalapeno Popper Dip</p>
-            <p >Nachos Supreme</p>
-            <p >Salsa Verde</p>
-          </div>
+        <div class="card">
+          <img src="img/salsa_verde.png" alt="Salsa Verde">
+          <h4>Salsa Verde</h4>
+            <div class="info">
+              <h4>&#x20B9; 499</h4>
+              <h4>4.1<i class="bi bi-star-fill"></i></h4>
+            </div>
+            <button>ADD TO CART</button>
         </div>
-        <div class="menu_items">
-          <div class="dishes">
-            <h4 class="menu_title">First Course</h4>
-            <p >Grilled Onion & Skirt Steak Tacos</p>
-            <p >Carnitas Huevos Rancheros</p>
-          </div>
+        <div class="card">
+          <img src="img/grilled_tacos.webp" alt="Grilled Tacos">
+          <h4>Grilled Tacos</h4>
+            <div class="info">
+              <h4>&#x20B9; 799</h4>
+              <h4>4.4<i class="bi bi-star-fill"></i></h4>
+            </div>
+            <button>ADD TO CART</button>
         </div>
-        <div class="menu_items">
-          <div class="dishes">
-            <h4 class="menu_title">Main Course</h4>
-            <p >Oaxacan Red Chile Enchiladas</p>
-            <p >Mexican Noodle Casserole</p>
-          </div>
+        <div class="card">
+          <img src="img/carnitas_huevos.avif" alt="Carnitas Huevos">
+          <h4>Carnitas Huevos</h4>
+            <div class="info">
+              <h4>&#x20B9; 1599</h4>
+              <h4>4.7<i class="bi bi-star-fill"></i></h4>
+            </div>
+            <button>ADD TO CART</button>
         </div>
-        <div class="menu_items">
-          <div class="dishes">
-            <h4 class="menu_title">Dessert</h4>
-            <p >Sweet Rice</p>
-            <p >Baked Churro Bites</p>
-          </div>
+        <div class="card">
+          <img src="img/enchiladas.png" alt="Chile Enchiladas">
+          <h4>Chile Enchiladas</h4>
+            <div class="info">
+              <h4>&#x20B9; 999</h4>
+              <h4>4.6<i class="bi bi-star-fill"></i></h4>
+            </div>
+            <button>ADD TO CART</button>
         </div>
-        <div class="menu_items">
-          <div class="dishes">
-            <h4 class="menu_title">Beverages</h4>
-            <p >Margarita</p>
-            <p >Michelada</p>
-            <p >Paloma</p>
-          </div>
+        <div class="card">
+          <img src="img/mexican_noodles.webp" alt="Mexican Noodles">
+          <h4>Mexican Noodles</h4>
+            <div class="info">
+              <h4>&#x20B9; 899</h4>
+              <h4>4.3<i class="bi bi-star-fill"></i></h4>
+            </div>
+            <button>ADD TO CART</button>
+        </div>
+        <div class="card">
+          <img src="img/sweet_rice.png" alt="Sweet Rice">
+          <h4>Sweet Rice</h4>
+            <div class="info">
+              <h4>&#x20B9; 499</h4>
+              <h4>4.0<i class="bi bi-star-fill"></i></h4>
+            </div>
+            <button>ADD TO CART</button>
+        </div>
+        <div class="card">
+          <img src="img/margarita.webp" alt="Margarita">
+          <h4>Margarita</h4>
+            <div class="info">
+              <h4>&#x20B9; 1299</h4>
+              <h4>4.5<i class="bi bi-star-fill"></i></h4>
+            </div>
+            <button>ADD TO CART</button>
+        </div>
+        <div class="card">
+          <img src="img/paloma.avif" alt="Paloma">
+          <h4>Paloma</h4>
+            <div class="info">
+              <h4>&#x20B9; 1299</h4>
+              <h4>4.5<i class="bi bi-star-fill"></i></h4>
+            </div>
+            <button>ADD TO CART</button>
         </div>
       </div>
+    </div>
 
     <footer>
+      <nav>
+        <ul>
+          <li>
+            <a href="#">MENU<i class="bi bi-book"></i></a>
+          </li>
+          <li><a href="#">Delivery</a></li>
+          <li><a href="#">Dining Out</a></li>
+          <li><a href="#">Gift Cards</a></li>
+          <li><a href="#">Email Club</a></li>
+        </ul>
+        <ul>
+          <li><a href="tel:9876543210">+91 9876543210</a></li>
+          <li>
+            <select class="classic">
+              <option>Select</option>
+              <option>KOLKATA</option>
+              <option>BOMBAY</option>
+              <option>BENGALURU</option>
+              <option>NEW DELHI</option>
+              <option>CHENNAI</option>
+            </select>
+          </li>
+        </ul>
+      </nav>
 
-        <nav>
-            <ul>
-                <li><a href="#">MENU<i class="bi bi-book"></i></a></li>
-                <li><a href="#">Delivery</a></li>
-                <li><a href="#">Dining Out</a></li>
-                <li><a href="#">Gift Cards</a></li>
-                <li><a href="#">Email Club</a></li>
-            </ul>
-            <ul>
-                <li><a href="tel:9876543210">+91 9876543210</a></li>
-                <li>
-                    <select class="classic">
-                        <option>Select</option>
-                        <option>KOLKATA</option>
-                        <option>BOMBAY</option>
-                        <option>BENGALURU</option>
-                        <option>NEW DELHI</option>
-                        <option>CHENNAI</option>
-                    </select>
-                </li>
-            </ul>
-        </nav>
+      <hr />
 
-        <hr>
-
-        <div class="container">
-
-            <h1>WITH THE NATION | FOOD NATION</h1>
-            <h1>HURRY UP!!!</h1>
-            <div class="button">
-                <button>FIND YOUR LOCATION</button>
-                <button>GET FRANCHISE</button>
-            </div>
+      <div class="container">
+        <h1>WITH THE NATION | FOOD NATION</h1>
+        <h1>HURRY UP!!!</h1>
+        <div class="button">
+          <button>FIND YOUR LOCATION</button>
+          <button>GET FRANCHISE</button>
         </div>
-        <img src="img/footer_food.png" alt="Footer Food Image">
-        <p class="copyright">© 2023-2024 by <strong>FOOD NATION</strong>. All Rights Reserved.</p>
-    
+      </div>
+      <img src="img/footer_food.png" alt="Footer Food Image" />
+      <p class="copyright">
+        © 2023-2024 by <strong>FOOD NATION</strong>. All Rights Reserved.
+      </p>
     </footer>
-
     <script src="app.js"></script>
-
-</body>
+  </body>
 </html>

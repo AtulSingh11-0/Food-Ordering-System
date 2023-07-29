@@ -11,25 +11,6 @@
     
     <!-- bootstrap icons link -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
-
-    <style>
-        #menu_container{
-        padding-block: 50px 100px;
-        position: relative;
-        color: #2D2A4A;
-        background: 
-            linear-gradient(
-                180deg,
-                #A51931,
-                transparent 40%
-            ), 
-            linear-gradient(
-                0deg,
-                #A51931,
-                transparent 40%
-            );
-        }
-    </style>
 </head>
 <body>
     
@@ -96,7 +77,6 @@
                         class="main_images" 
                         src="img/thai_cuisine.png" 
                         alt="Thai Cuisine"
-                        style="width: 40em;"
                     >
                 </div>
             </div>
@@ -105,47 +85,89 @@
         <!-- Section ends -->
     </header>
 
-    <div id="menu_container" style="font-family: ubuntu;">
+    <div id="menu_container" style="font-family: ubuntu">
+        <h1 style="text-align: center; padding: 20px;">MENU</h1>
         <div class="menu_items">
-          <div class="dishes">
-            <h1>Menu</h1>
-            <hr style="color: #2D2A4A;">
+          <div class="card">
+            <img src="img/thai_chicken_lettuce_wraps.webp" alt="Thai Chicken Lettuce wraps">
+            <h4>Thai Chicken Lettuce wraps</h4>
+              <div class="info">
+                <h4>&#x20B9; 899</h4>
+                <h4>4.6<i class="bi bi-star-fill"></i></h4>
+              </div>
+              <button>ADD TO CART</button>
           </div>
-        </div>
-        <div class="menu_items">
-          <div class="dishes">
-            <h4 class="menu_title">Appetizer</h4>
-            <p > Thai Chicken Lettuce Wraps</p>
-            <p >Chicken Satay with Peanut Dipping Sauce</p>
-            <p >Peanut Dipping Sauce</p>
+          <div class="card">
+            <img src="img/chicken_satay.png" alt="Chicken Satay">
+            <h4>Chicken Satay</h4>
+              <div class="info">
+                <h4>&#x20B9; 499</h4>
+                <h4>4.8<i class="bi bi-star-fill"></i></h4>
+              </div>
+              <button>ADD TO CART</button>
           </div>
-        </div>
-        <div class="menu_items">
-          <div class="dishes">
-            <h4 class="menu_title">First Course</h4>
-            <p >Supreme Thai Ribs</p>
-            <p >Thai Peanut Salad Wonton Cups</p>
+          <div class="card">
+            <img src="img/thai_salad.png" alt="Thai Peanut Salad Wonton Cups">
+            <h4>Thai Peanut Salad Wonton Cups</h4>
+              <div class="info">
+                <h4>&#x20B9; 499</h4>
+                <h4>4.5<i class="bi bi-star-fill"></i></h4>
+              </div>
+              <button>ADD TO CART</button>
           </div>
-        </div>
-        <div class="menu_items">
-          <div class="dishes">
-            <h4 class="menu_title">Main Course</h4>
-            <p >Thai Chicken Satay</p>
-            <p >Thai Grilled Whole Fish With Coriander-Chili Sauce</p>
+          <div class="card">
+            <img src="img/thai_ribs.png" alt="Thai Red Curry Ribs">
+            <h4>Thai Red Curry Ribs</h4>
+              <div class="info">
+                <h4>&#x20B9; 1599</h4>
+                <h4>4.4<i class="bi bi-star-fill"></i></h4>
+              </div>
+              <button>ADD TO CART</button>
           </div>
-        </div>
-        <div class="menu_items">
-          <div class="dishes">
-            <h4 class="menu_title">Dessert</h4>
-            <p > Khao Niaow Ma Muang </p>
-            <p >Khao Niaow Tu Rian</p>
+          <div class="card">
+            <img src="img/thai_fish.webp" alt="Steamed Fish in Thai lime sauce">
+            <h4>Steamed Fish in Thai lime sauce</h4>
+              <div class="info">
+                <h4>&#x20B9; 1299</h4>
+                <h4>4.7<i class="bi bi-star-fill"></i></h4>
+              </div>
+              <button>ADD TO CART</button>
           </div>
-        </div>
-        <div class="menu_items">
-          <div class="dishes">
-            <h4 class="menu_title">Beverages</h4>
-            <p >Thai Basil Mojito</p>
-            <p >Chang</p>
+          <div class="card">
+            <img src="img/mango_stickyRice.png" alt="Khao Niaow Ma Muang">
+            <h4>Khao Niaow Ma Muang</h4>
+              <div class="info">
+                <h4>&#x20B9; 899</h4>
+                <h4>4.3<i class="bi bi-star-fill"></i></h4>
+              </div>
+              <button>ADD TO CART</button>
+          </div>
+          <div class="card">
+            <img src="img/pad_thai_noodles.avif" alt="Pad Thai Noodles">
+            <h4>Pad Thai Noodles</h4>
+              <div class="info">
+                <h4>&#x20B9; 999</h4>
+                <h4>4.5<i class="bi bi-star-fill"></i></h4>
+              </div>
+              <button>ADD TO CART</button>
+          </div>
+          <div class="card">
+            <img src="img/bojito.png" alt="Grilled Pineapple Bojito">
+            <h4>Grilled Pineapple Bojito</h4>
+              <div class="info">
+                <h4>&#x20B9; 499</h4>
+                <h4>4.5<i class="bi bi-star-fill"></i></h4>
+              </div>
+              <button>ADD TO CART</button>
+          </div>
+          <div class="card">
+            <img src="img/Chang-beer.webp" alt="Change Beer">
+            <h4>Change Beer</h4>
+              <div class="info">
+                <h4>&#x20B9; 699</h4>
+                <h4>4.3<i class="bi bi-star-fill"></i></h4>
+              </div>
+              <button>ADD TO CART</button>
           </div>
         </div>
       </div>

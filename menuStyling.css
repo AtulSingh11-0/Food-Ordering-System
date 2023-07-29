@@ -1,37 +1,67 @@
 @import url('https://fonts.googleapis.com/css2?family=Koh+Santepheap&display=swap');
 
-.menu_items {
+#menu_container {
+    background: linear-gradient(0deg, var(--off-white-bg) 15%, #ffb12a 88%);
+    padding: 50px 100px;
+}
+
+#menu_container h1{
+    filter: drop-shadow(1px 1px 2px var(--paragraph-color));
+    letter-spacing: 3px;
+    font-size: 3rem;
+    font-family: 'Libre Caslon Display', serif;
+}
+
+#menu_container .menu_items {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+    gap: 3em;
+}
+
+#menu_container .menu_items .card{
+    background: var(--off-white-bg);
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px var(--paragraph-color);
+    text-align: center;
+    padding: 10px;
+    font-size: 1.3rem;
+}
+
+#menu_container .menu_items .card img{
+    filter: drop-shadow(4px 4px 4px var(--paragraph-color));
+    object-fit: contain;
+    height: 150px;
+    padding-bottom: 10px;
+}
+
+
+#menu_container .menu_items .card .info{
+    border-bottom: 2px solid black;
     display: flex;
-    flex-direction: row;
-    justify-content: center;
-    font-size: 1.2rem;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 10px 0;
 }
 
-.menu_items h1{
-    padding: 10px;
-    text-transform: uppercase;
-    font-family: 'Koh Santepheap', cursive;
+#menu_container .menu_items .card .info i{
+    color: orange;
+    padding-inline: 5px;
 }
 
-.menu_items hr {
-    width: 50vw;
-    margin: auto;
+#menu_container .menu_items .card button{
+    margin-block: 10px;
+    padding: 10px 15px;
+    font-size: 1rem;
+    border-radius: 10px;
+    color: var(--white);
+    background: black;
+    font-weight: var(--list-font-weight);
+    border: none;
+    outline: none;
+    cursor: pointer;
+    transition: .3s linear;
 }
 
-.menu_items .dishes{
-    text-align: center;
-    padding-block: 5px;
-}
-
-.menu_items .menu_title {
-    text-align: center;
-    text-transform: uppercase;
-    padding-top: 70px;
-}
-
-.menu_items p{
-    padding: 10px;
-}
-.menu_title{
-    font-family: 'Koh Santepheap', cursive;
+#menu_container .menu_items .card button:hover {
+    background: #8CCA72;
 }
