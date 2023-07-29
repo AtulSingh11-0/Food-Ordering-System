@@ -73,7 +73,7 @@ header nav .logo_ul ul{
 /* removing the bullets from the list items */
 header nav .logo_ul ul li{
     list-style-type: none;
-    padding: .5em 1em;
+    padding: 1em 1.5em;
     margin-right: 12px;
 }
 
