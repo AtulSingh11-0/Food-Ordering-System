@@ -65,3 +65,7 @@
 #menu_container .menu_items .card button:hover {
     background: #8CCA72;
 }
+#menu_container .menu_items .card:hover{
+    transform: scale(0.95);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
